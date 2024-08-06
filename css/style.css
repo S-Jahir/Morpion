@@ -11,7 +11,8 @@ li {
 
 /* Genral styles */
 body {
-    background-color: #d5b9b9;
+    background-color: antiquewhite;
+
     font-size: 1rem;
 }
 
@@ -45,10 +46,56 @@ body {
     column-gap: 15px;
     row-gap: 15px;
     margin-bottom: 0.5em;
+
+}
+
+.bg-color {
+    background-color: rgb(123, 177, 138);
+}
+
+/* END :Header */
+
+/* START :Section Player */
+.players {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.target-icone,
+.cross-icone {
+    width: 108px;
+    height: 108px;
+    transition: rotate 3S linear
 }
 
 
 
+/* START : Animation */
+
+.player .cross-icone:hover {
+    rotate: 360deg;
+
+}
+
+.player .target-icone:hover {
+    rotate: 360deg;
+
+
+
+}
+
+
+/* END : Animation */
+/* END :Section Player */
+
+/* START : Table */
 .table,
 tr,
 td {
@@ -62,7 +109,8 @@ td {
     width: 120px;
     height: 120px;
     border-spacing: 0;
-
     padding: 6px;
 
 }
+
+/* END : Table */
